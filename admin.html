@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="text-white min-h-screen p-6">
+
+<div class="flex justify-between mb-6">
+    <h1 class="text-3xl text-[#FF4500]">Admin Dashboard</h1>
+    <button onclick="logout()" class="bg-red-600 px-4 py-2 rounded">Logout</button>
+</div>
+
+<div class="glass p-6 rounded-2xl mb-6">
+    <h2 class="text-xl text-[#007BFF] mb-4">Add Product</h2>
+
+    <div class="grid md:grid-cols-4 gap-4">
+        <input id="name" placeholder="Name" class="input">
+        <input id="category" placeholder="Category" class="input">
+        <input id="price" type="number" placeholder="Price" class="input">
+        <input id="quantity" type="number" placeholder="Quantity" class="input">
+        <input type="file" id="imageFile" accept="image/*" class="input">
+    </div>
+
+    <button onclick="addProduct()" class="btn mt-4">Add Product</button>
+</div>
+
+<h2 class="text-xl mb-4">Manage Products</h2>
+<div id="adminProducts" class="grid md:grid-cols-2 gap-6"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

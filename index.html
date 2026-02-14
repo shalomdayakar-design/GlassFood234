@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html><!DOCTYPE html>
+<html>
+<head>
+    <title>GlassFood Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="flex items-center justify-center min-h-screen text-white">
+
+<div class="glass p-10 rounded-2xl w-96">
+
+    <h1 class="text-3xl text-[#FF4500] text-center mb-6">GlassFood</h1>
+
+    <input id="email" placeholder="Email" class="input w-full mb-3">
+    <input id="password" type="password" placeholder="Password" class="input w-full mb-3">
+
+    <select id="role" class="input w-full mb-4">
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+    </select>
+
+    <button onclick="login()" class="btn w-full mb-3">Login</button>
+
+    <button onclick="register()" class="bg-[#007BFF] w-full py-2 rounded">
+        Register
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+</html>
